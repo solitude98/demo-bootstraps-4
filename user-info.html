@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <button class="navbar-toggler ml-auto mb-2 bg-dark" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--side bar-->
+                    <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                        <a href="#" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">
+                        <img src="image/logo.jpg" class="rounded mr-3" alt="logo" style="width: 40px;">The Solitude</a>
+                    <div class="bottom-border pb-3">
+                        <img src="image/admin1.JPG" width="40" class="rounded-circle">
+                        <a href="#" class="text-white ml-2">Quốc Anh</a>
+                    </div>
+                    <ul class="navbar-nar flex-column mt-4" >
+                        <li class="nav-item"><a href="dashboard.html" class="nav-link text-white p-3 mb-2 font-weight-bold font-italic sidebar-link"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 font-weight-bold font-italic current"><i class="fas fa-user text-light fa-lg mr-3"></i>Thông tin</a></li>
+                        <li class="nav-item"><a href="product.html" class="nav-link text-white p-3 mb-2 font-weight-bold font-italic sidebar-link"><i class="fas fa-laptop text-light fa-lg mr-3"></i>Sản phẩm</a></li>
+                        <li class="nav-item"><a href="order.html" class="nav-link text-white p-3 mb-2 font-weight-bold font-italic sidebar-link"><i class="fas fa-list-alt text-light fa-lg mr-3"></i>Đơn hàng</a></li>
+                    </ul>
+                </div>
+                    <!--end of side bar-->
+
+                    <!--top-nav-->
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <h4 class="text-light text-uppercase mb-0">Dashboard</h4>
+                            </div>
+                            <div class="col-md-5">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-input" placeholder="Search...">
+                                        <button type="button" class="btn btn-white search-button"><i class="fas fa-search text-danger"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i class="fas fa-comments text-muted fa-lg"></i></a></li>
+                                    <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i class="fas fa-bell text-muted fa-lg"></i></a></li>
+                                    <li class="nav-item ml-md-auto"><a href="#" class="nav-link" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of top-nav-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End of navbar-->
+
+    <!-- modal -->
+    <div class="modal fade" id="sign-out">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bạn muốn đăng xuất khỏi page ?</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Press logout to leave
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-succes" data-dismiss="modal">Stay here</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of modal -->
+
+    <!-- table -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 ml-auto mt-4">
+                <div class="row pt-5 mt-3 mb-5">
+                    <h2>Danh sách người mua</h2>            
+                    <table class="table table-responsive-sm table-responsive-md table-responsive-xl table-bordered table-striped table-dark table-hover" style="text-align: center;">
+                        <thead>
+                            <tr>
+                                <th>Họ</th>
+                                <th>Tên</th>
+                                <th>Email</th>
+                                <th>Giao dịch</th>
+                                <th>Thanh toán</th>
+                                <th>Địa chỉ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Phan Quang</td>
+                                <td>Quốc Anh</td>
+                                <td>quocanh.pq@gmail.com</td>
+                                <td>Chuyển khoản</td>
+                                <td>Đã thanh toán</td>
+                                <td>32 Tân Kỳ Tân Quý, P.12, Q.Tân Phú</td>
+                            </tr>
+                            <tr>
+                                <td>Phan Thị</td>
+                                <td>Trúc Phương</td>
+                                <td>trucphuong.ptpt@gmail.com</td>
+                                <td>COD</td>
+                                <td>Đã thanh toán</td>
+                                <td>32 Tân Kỳ Tân Quý, P.12, Q.Tân Phú</td>
+                            </tr>
+                            <tr>
+                                <td>Tôn</td>
+                                <td>Thất Khoa</td>
+                                <td>thatkhoa.tn@gmail.com</td>
+                                <td>Chuyển khoản</td>
+                                <td>Chưa thanh toán</td>
+                                <td>32 Tân Kỳ Tân Quý, P.12, Q.Tân Phú</td>
+                            </tr>
+                            <tr>
+                                <td>Lê</td>
+                                <td>Phương Thảo</td>
+                                <td>phuongthao.le@gmail.com</td>
+                                <td>COD</td>
+                                <td>Đã thanh toán</td>
+                                <td>32 Tân Kỳ Tân Quý, P.12, Q.Tân Phú</td>
+                            </tr>
+                            <tr>
+                                <td>Hoàng</td>
+                                <td>Ngọc Lâm</td>
+                                <td>ngoclam.hg@gmail.com</td>
+                                <td>COD</td>
+                                <td>Đã thanh toán</td>
+                                <td>32 Tân Kỳ Tân Quý, P.12, Q.Tân Phú</td>
+                            </tr>
+                            <tr>>
+                                <td>Đặng</td>
+                                <td>Quang Huy</td>
+                                <td>quanghuy.dg@gmail.com</td>
+                                <td>COD</td>
+                                <td>Đã thanh toán</td>
+                                <td>32 Tân Kỳ Tân Quý, P.12, Q.Tân Phú</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of table -->
+
+    <!-- pagination -->
+    <div class="container">
+        <ul class="pagination pagination-lg-4 justify-content-center ml-auto" style="margin:20px;">
+            <li class = "page-item"><a href="#" class="page-link">Previous</a></li>
+            <li class = "page-item"><a href="#" class="page-link">1</a></li>
+            <li class = "page-item"><a href="#" class="page-link">2</a></li>
+            <li class = "page-item"><a href="#" class="page-link">3</a></li>
+            <li class = "page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+    </div>
+    <!-- end of pagination -->
+</body>
+</html>
